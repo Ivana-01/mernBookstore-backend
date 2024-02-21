@@ -14,7 +14,7 @@ app.use(cors({
 }));
 
 mongoose
-    .connect(MONGO_URI)
+    .connect('mongodb+srv://node1user:user1234@cluster0.f2jm7ay.mongodb.net/cluster0?retryWrites=true&w=majority')
     .then(() => {
         app.listen(PORT, () => {
             console.log(`Server is running on port ${PORT}`);
