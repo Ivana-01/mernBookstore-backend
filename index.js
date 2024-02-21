@@ -4,7 +4,7 @@ import  booksRoute from './routes/booksRoute.js';
 import cors from 'cors';
 
 const app = express();
-const PORT = process.env.PORT || 5555;
+const PORT = process.env.REACT_APP_SERVER_URL || 5555;
 const MONGO_URI = process.env.MONGO_URI;
 
 //middleware for req body and cors policy
