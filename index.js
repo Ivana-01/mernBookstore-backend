@@ -13,6 +13,10 @@ app.use(cors({
     origin: ["http://localhost:5555", "https://mernbookstore-api.onrender.app"]
 }));
 
+app.get('/', (req, res) => {
+    console.log('Hello World!');
+});
+
 mongoose
     .connect('mongodb+srv://node1user:user1234@cluster0.f2jm7ay.mongodb.net/cluster0?retryWrites=true&w=majority')
     .then(() => {
