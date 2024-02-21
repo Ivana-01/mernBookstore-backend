@@ -9,7 +9,7 @@ const app = express();
 //middleware for req body and cors policy
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:5555", "https://mernbookstore.onrender.app"]
+    origin: ["http://localhost:5555", "https://mernbookstore-api.onrender.app"]
 }));
 
 mongoose
