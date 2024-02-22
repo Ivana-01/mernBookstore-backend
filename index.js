@@ -9,7 +9,9 @@ const MONGO_URI = process.env.MONGO_URI;
 
 //middleware for req body and cors policy
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: ['http://localhost:3000', 'https://mernbookstore-mfvi.onrender.com/books'],
+}));
 
 app.get('/', (req, res) => {
     console.log('Hello World!');
